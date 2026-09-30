@@ -1,0 +1,168 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --bg-color: #f4f6f9;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --text-muted: #666666;
+  --border-color: #e0e0e0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 35px 0;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #bdc3c7;
+  font-size: 1rem;
+}
+
+/* Menu de Navegação */
+.navbar {
+  background-color: #1a252f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 25px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  overflow-x: auto;
+}
+
+.navbar a {
+  display: block;
+  padding: 12px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.navbar a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Main Content & Cards */
+main {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 25px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item h3 {
+  font-size: 1.05rem;
+  color: var(--primary-color);
+}
+
+.institution {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 5px;
+}
+
+/* Lista de Habilidades */
+.skills-list {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.skills-list strong {
+  color: var(--primary-color);
+}
+
+/* Lista de Contato */
+.contact-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+.contact-list a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.85rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 600px) {
+  .header {
+    text-align: center;
+  }
+}
